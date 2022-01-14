@@ -9,11 +9,6 @@ const ContactMe = _ => {
         const serviceID = 'service_c7zfo0v';
         const templateID = 'template_grt3l1t';
         const userID = 'user_1SWZaJzd3oDeIPZuKxwX8'
-        const name = document.querySelector('#name')
-        const tel = document.querySelector('#tel')
-        const email = document.querySelector('#email')
-        const subject = document.querySelector('#subject')
-        const message = document.querySelector('#message')
     
         emailjs.sendForm(serviceID, templateID, form.current, userID)
           .then((result) => {
@@ -21,19 +16,16 @@ const ContactMe = _ => {
           }, (error) => {
               console.log(error.text);
           });
-          name.value = ''
-          tel.value = ''
-          email.value = ''
-          subject.value = ''
-          message.value = ''
+        //inputlara data daxil edilib submit edildikden sonra inputlarin sifirlanmasi ucun bu koddan ist. edilir.
+          form.current.reset()
 
-      };
+    };
     return (
         <div className="contact">
         <div className="container">
             <h3 className="contact-title">Contact me</h3>
             <p className="contact-text">Please fill out the form and describe you project needs and I'll contact you as soon as possible.</p>
-            <form ref={form} onSubmit={sendEmail} className="row jc-center">
+            <form ref={form} onSubmit={sendEmail} className="row jc-center" autoComplete='off'>
                 <div className="col-10 col-lg-6 mb-5 mb-lg-0">
                     <div className="input-data">
                         <input type="text" id='name' name='name' placeholder="Name"/>

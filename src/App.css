@@ -143,12 +143,13 @@ input[type=submit]:hover {
 }
 .input-data{
   position: relative;
-  height: 62.5px;
+  height: 3.75rem;
   width: 100%;
+  margin-bottom: .5rem;
 }
 .textarea-data {
   position: relative;
-  height: 250px;
+  height: 16.5rem;
   width: 100%;
   margin-bottom: 1.5rem;
 }
@@ -163,6 +164,7 @@ input[type=submit]:hover {
   border-bottom: 1px solid var(--primary-grey);
   outline: none;
   caret-color: var(--primary-red);
+  /* caret-color-  inputa klik edende gorsenen kursorun rengini teyin edir */
 }
 .input-data > .underline,
 .textarea-data > .underline 
