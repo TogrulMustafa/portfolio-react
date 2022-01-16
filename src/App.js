@@ -6,6 +6,7 @@ import Header from './components/Header'
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import ContactMe from './components/ContactMe';
+import Services from './components/Services';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   <Navbar />
   <Header/>
   <AboutMe/>
+  <Services/>
   <Experience/>
   <ContactMe/>
   </>
