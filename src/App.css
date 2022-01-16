@@ -56,9 +56,10 @@ nav a.nav-link {
   font-size: 2rem;
   margin-bottom: 25px;
   color: var(--primary-orange);
+  min-width: 18.75rem;
 }
 .typed-text {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--primary-white);
 }
 .downloadCV {
@@ -360,9 +361,6 @@ textarea {
 /* Breakpoints */
 
 @media (min-width: 576px) {
-  .main-info h1 {
-    font-size: 2rem;
-  }
   .typed-text {
     font-size: 1.6rem;
   }
