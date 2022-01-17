@@ -8,7 +8,7 @@ const Services = _ => {
     return (
         <div className="service-background">
         <div className="container">
-            <h2 className="service-title">Our Services</h2>
+            <h2 className="service-title">My Services</h2>
             <div className="row services">
                 <div className="service-item">
                     <div className="kard">

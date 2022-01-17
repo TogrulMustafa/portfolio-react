@@ -4,6 +4,7 @@
   --primary-grey: #ccd1d9;
   --primary-gray: #999;
   --primary-dark-grey: #666;
+  --primary-dark-gray: #333;
   --primary-orange: #f9ab00;
   --primary-dark: rgb(52,58,64);
   --primary-red: #ef4035;
@@ -84,12 +85,20 @@ nav a.nav-link {
 
 /* AboutMe starts */
 
-.photo-wrap {
+.about {
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.about-photo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
+  flex: 0 0 auto;
+  width: 75%;
 }
-.profile-img {
+.about-photo img {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
@@ -97,10 +106,17 @@ nav a.nav-link {
   outline-offset: 5px;
   object-fit: cover;
 }
+.about-content {
+  flex: 0 0 auto;
+  width: 75%;
+}
 .about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
 
 }
 .about-text {
@@ -120,6 +136,8 @@ nav a.nav-link {
 .service-title {
   text-align: center;
   font-size: 2rem;
+  font-weight: 300;
+  color: var(--primary-orange);
   text-transform: uppercase;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -207,7 +225,7 @@ nav a.nav-link {
   text-transform: uppercase;
   color: var(--primary-orange);
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
@@ -273,8 +291,8 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.5rem;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 2rem;
 }
 .contact-text {
   color: var(--primary-white);
@@ -354,6 +372,82 @@ textarea {
 }
 
 
+/* Footer starts */
+
+.footer {
+  background-color: var(--primary-darkgray);
+  padding: 3rem 0;
+}
+.footer-items {
+  justify-content: center;
+}
+.footer-left,
+.footer-center 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  width: 75%;
+  margin-bottom: 3rem;
+}
+.footer-left span,
+.footer-center a 
+{
+  display: inline-block;
+  color: var(--primary-gray);
+  margin-bottom: .5rem;
+  transition: all .3s ease;
+}
+.footer-left span:hover,
+.footer-center a:hover 
+{
+  transform: translateX(70px);
+  color: var(--primary-orange);
+  font-style: italic;
+  text-decoration: none;
+}
+.footer-right {
+  flex: 0 0 auto;
+  width: 75%;
+}
+.footer-right > div {
+  display: flex;
+}
+.footer-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background:var(--primary-gray);
+  color: var(--primary-white);
+  margin-right: .625rem;
+  transition: all .3s ease;
+}
+.footer-right a i {
+  transition: all .3s ease;
+}
+.footer-right a:hover i {
+  transform: scale(1.5);
+  color: var(--primary-white);
+}
+.footer-right a:hover {
+  background: var(--primary-orange);
+  text-decoration: none;
+}
+.footer-right p {
+  margin-top: 1rem;
+  transition: all .3s ease;
+  color: var(--primary-gray);
+}
+.footer-right p:hover {
+  color: var(--primary-orange);
+}
+
+
 
 
 
@@ -375,7 +469,8 @@ textarea {
 }
 
 @media (min-width: 992px) {
-  /* Header starts */
+  
+/* Header starts */
 
   .main-info h1 {
     font-size: 2.5rem;
@@ -388,19 +483,27 @@ textarea {
     font-size: 1rem;
   }
 
-  /* AboutMe starts */
-
+/* AboutMe starts */
+  
+  .about-photo {
+    margin-bottom: 0;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .about-content {
+    flex: 0 0 auto;
+    width: 50%;
+  }
   .about-heading {
     text-align: left;
   }
 
-  /* Services start */
+/* Services start */
 
   .service-background {
     padding-bottom: 3rem;
   }
   .service-title {
-    font-size: 3.125rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -417,7 +520,7 @@ textarea {
     padding-right: 1rem;
   }  
 
-  /* Experience starts */
+/* Experience starts */
 
   .circle-left,
   .circle-lg-right
@@ -462,14 +565,22 @@ textarea {
   }
 
 
-    /* ContactMe starts */
-  
-    .contact-title {
-      font-size: 2rem;
-    }
-    .contact-text {
+/* ContactMe starts */
+
+  .contact-text {
       font-size: 1.3rem;
-    }
+  }
+
+/* Fopoter starts */
+
+  .footer-left,
+  .footer-center,
+  .footer-right
+  {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
