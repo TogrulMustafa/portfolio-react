@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Experience = _ => {
     return (
-        <div className="experience container">
+        <div id="experience" className="experience container">
             <h2 className="experience-title">Experience</h2>
             <div className="experience-item row">
                 <div className="circle-right"></div>

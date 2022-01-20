@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = _ => {
     return (
-        <div className='container'>
+        <div id='aboutme' className='container'>
             <div className="row about">
                 <div className="about-photo">
                     <img src='https://source.unsplash.com/random'/>

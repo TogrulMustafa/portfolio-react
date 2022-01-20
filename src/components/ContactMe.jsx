@@ -21,7 +21,7 @@ const ContactMe = _ => {
 
     };
     return (
-        <div className="contact">
+        <div id='contactme' className="contact">
         <div className="container">
             <h3 className="contact-title">Contact me</h3>
             <p className="contact-text">Please fill out the form and describe you project needs and I'll contact you as soon as possible.</p>

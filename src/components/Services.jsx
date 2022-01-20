@@ -4,9 +4,16 @@ import web from '../img/web.jpg'
 import smm from '../img/smm.jpg'
 import helpdesk from '../img/helpdesk.png'
 
+// fetch - how to fetch data from local json file? 
+// modulyar sistem : import /export file
+// asinxron programming - asynchronous programming async await
+// node httpsserver bunu arashdir npm i http-server
+// ***** useEffect() => datalari getirmeyi
+// ***** useState() ==> use state  data saxlamaq ve istifade  etmek ucun 
+
 const Services = _ => {
     return (
-        <div className="service-background">
+        <div id='services' className="service-background">
         <div className="container">
             <h2 className="service-title">My Services</h2>
             <div className="row services">

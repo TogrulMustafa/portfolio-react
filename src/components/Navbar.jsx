@@ -1,5 +1,5 @@
-import React from 'react'
 import logo from '../img/logo.png'
+import { Link } from 'react-scroll'
 
 const  Navbar = _ => {
     return (
@@ -13,19 +13,19 @@ const  Navbar = _ => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+              <Link smooth={true} className="nav-link">Home <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About me</a>
+              <Link smooth={true} to="aboutme" className="nav-link">About me</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <Link smooth={true} to="services" className="nav-link">Services</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Experience</a>
+              <Link smooth={true} to="experience" className="nav-link">Experience</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact us</a>
+              <Link smooth={true} to="contactme" className="nav-link">Contact us</Link>
             </li>
           </ul>
         </div>

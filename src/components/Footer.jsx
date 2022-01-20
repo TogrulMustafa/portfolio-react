@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = _ => {
     return (
-        <div class="footer">
+        <div id='footer' class="footer">
             <div class="container">
                 <div class="row footer-items">
                     <div class="footer-left">
@@ -33,6 +33,7 @@ const Footer = _ => {
                             </a>
                         </div>
                         <p>Copyright <i class="far fa-copyright"></i> 2021 Mustafazade Togrul | All Rights Reserved</p>
+                        {/* ?2021 dinamik etmek */}
                     </div>
                 </div>
             </div>
