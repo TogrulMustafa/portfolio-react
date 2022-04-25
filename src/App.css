@@ -281,13 +281,6 @@ h3 {
 
 
 /* ContactMe starts */
-
-.green {
-  border: 1px solid green;
-}
-.red {
-  border: 1px solid red;
-}
 .contact {
   background: var(--primary-dark);
   padding: 3rem 0;
@@ -352,7 +345,7 @@ textarea {
 }
 .input-data > .underline {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   height: 2px;
   width: 100%; 
 }
