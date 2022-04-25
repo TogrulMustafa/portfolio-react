@@ -282,6 +282,12 @@ h3 {
 
 /* ContactMe starts */
 
+.green {
+  border: 1px solid green;
+}
+.red {
+  border: 1px solid red;
+}
 .contact {
   background: var(--primary-dark);
   padding: 3rem 0;
@@ -325,9 +331,11 @@ input[type=submit]:hover {
 }
 .textarea-data {
   position: relative;
-  height: 16.5rem;
   width: 100%;
   margin-bottom: 1.5rem;
+}
+textarea {
+  resize: none !important;
 }
 .input-data > input,
 .textarea-data > textarea
@@ -342,11 +350,15 @@ input[type=submit]:hover {
   caret-color: var(--primary-red);
   /* caret-color-  inputa klik edende gorsenen kursorun rengini teyin edir */
 }
-.input-data > .underline,
-.textarea-data > .underline 
-{
+.input-data > .underline {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  height: 2px;
+  width: 100%; 
+}
+.textarea-data > .underline {
+  position: absolute;
+  bottom: 5px;
   height: 2px;
   width: 100%; 
 }
@@ -367,9 +379,7 @@ textarea:focus ~ .underline::before
 {
   transform: scaleX(1);
 }
-textarea {
-  resize: none !important;
-}
+
 
 
 /* Footer starts */
