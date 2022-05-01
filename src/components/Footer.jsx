@@ -1,6 +1,14 @@
 import React from 'react'
 
 const Footer = _ => {
+
+
+    // const year = document.querySelector('#currentYear')
+    // const currentTime = new Date()
+    // const currentYear = currentTime.getFullYear()
+    // year.innerHTML = currentYear
+
+
     return (
         <div id='footer' class="footer">
             <div class="container">
@@ -32,8 +40,9 @@ const Footer = _ => {
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
-                        <p>Copyright <i class="far fa-copyright"></i> 2021 Mustafazade Togrul | All Rights Reserved</p>
-                        {/* ?2021 dinamik etmek */}
+                        <p>Copyright <i class="far fa-copyright"></i>2021 Mustafazade Togrul | All Rights Reserved</p>
+                        {/* <p>Copyright <i class="far fa-copyright"></i><span id='#currentYear'></span> Mustafazade Togrul | All Rights Reserved</p>
+                             footerda 2022'ni JS ile yazanda saytin goruntusu itir? */}
                     </div>
                 </div>
             </div>

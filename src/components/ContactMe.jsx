@@ -58,9 +58,3 @@ const ContactMe = _ => {
 }
 
 export default ContactMe
-
-// submit etdikden sonra value-larin sifirlanmasini bu sekilde etdim.Duzdur?
-// email template-e nomre mesajini da daxil etdim.
-// ferqli email yazanda inputa mesaj gelmir.Bele cixir ki,emailjs-de qeydiyyatdan kecmeyen email inputa yazildiqda mesaj gelmir.Sebeb?
-// react layihemizin vertical olaraq ekranini kicildende goruntu pozulur.Bunu nece aradan qaldira bilerik?
-// Oz saytimi yaradanda bu tip paketlerle islemeliyem yoxsa backend terefi yazilmalidir?
